@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-suicareader",
+  "version": "1.0.0",
+  "description": "cordova plugin to read Suica history data",
+  "cordova": {
+    "id": "io.github.deton.suicareader",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "Suica",
+    "PASMO",
+    "ICOCA",
+    "FeliCa",
+    "NFC",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "KIHARA Hideto",
+  "license": "MIT"
+}

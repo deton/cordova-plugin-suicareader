@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="io.github.deton.suicareader" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SuicaReader</name>
+    <description>Suica history reader</description>
+    <license>MIT</license>
+    <keywords>Suica,PASMO,ICOCA,FeliCa,NFC</keywords>
+    <js-module name="SuicaReader" src="www/SuicaReader.js">
+        <clobbers target="cordova.plugins.SuicaReader" />
+    </js-module>
+
+    <dependency id="phonegap-nfc" />
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SuicaReader">
+                <param name="android-package" value="io.github.deton.suicareader.SuicaReaderPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SuicaReaderPlugin.java" target-dir="src/io/github/deton/suicareader"/>
+        <!-- files from https://github.com/dongri/CardReader -->
+        <source-file src="src/android/FeliCa.java" target-dir="src/com/guncy/android/cardreader/lib"/>
+        <source-file src="src/android/Station.java" target-dir="src/com/guncy/android/cardreader/model"/>
+        <source-file src="src/android/StationCode.csv" target-dir="assets"/>
+    </platform>
+</plugin>
