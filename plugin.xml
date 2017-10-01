@@ -19,8 +19,8 @@
 
         <source-file src="src/android/SuicaReaderPlugin.java" target-dir="src/io/github/deton/suicareader"/>
         <!-- files from https://github.com/dongri/CardReader -->
-        <source-file src="src/android/FeliCa.java" target-dir="src/com/guncy/android/cardreader/lib"/>
-        <source-file src="src/android/Station.java" target-dir="src/com/guncy/android/cardreader/model"/>
-        <source-file src="src/android/StationCode.csv" target-dir="assets"/>
+        <source-file src="src/android/CardReader/app/src/main/java/com/guncy/android/cardreader/lib/FeliCa.java" target-dir="src/com/guncy/android/cardreader/lib"/>
+        <source-file src="src/android/CardReader/app/src/main/java/com/guncy/android/cardreader/model/Station.java" target-dir="src/com/guncy/android/cardreader/model"/>
+        <source-file src="src/android/CardReader/app/src/main/assets/StationCode.csv" target-dir="assets"/>
     </platform>
 </plugin>
