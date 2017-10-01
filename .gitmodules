@@ -1,0 +1,3 @@
+[submodule "src/android/CardReader"]
+	path = src/android/CardReader
+	url = https://github.com/dongri/CardReader.git
